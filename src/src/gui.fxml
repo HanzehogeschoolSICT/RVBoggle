@@ -8,10 +8,12 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1248.0" prefWidth="2157.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar fx:id="menu" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
+              <MenuItem mnemonicParsing="false" onAction="#reset" text="Generate" />
+              <MenuItem mnemonicParsing="false" onAction="#scan" text="Start" />
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
